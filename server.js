@@ -22,4 +22,21 @@ io.on('connection', function(socket) {
     // 
     socket.on('disconnect', function() {});
 });
+
+
+// connection_before_action
+// ref: https://github.com/Automattic/socket.io/wiki/Authorizing
+// ref: http://howtonode.org/socket-io-auth
+// ref: https://github.com/ivpusic/socket.io-cookie
+io.use(function(socket, next){
+    if(socket.request.headers.cookie){
+        // if session is valid
+        next();
+    }
+    else{
+        // if session is invalid
+        next(new Error('Authentication error'));
+    }
+});
+
 server.listen(3000);
