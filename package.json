@@ -1,0 +1,24 @@
+{
+  "name": "Socket.IO-Cookies-Session-Authentication-Sample",
+  "version": "1.0.0",
+  "description": "Socket.IO integration with Apache ReverseProxy",
+  "main": "server.js",
+  "dependencies": {
+    "socket.io": "^1.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scott1028/Socket.IO-Cookies-Session-Authentication-Sample"
+  },
+  "author": "ls",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scott1028/Socket.IO-Cookies-Session-Authentication-Sample/issues"
+  },
+  "homepage": "https://github.com/scott1028/Socket.IO-Cookies-Session-Authentication-Sample"
+}
